@@ -1,0 +1,116 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    border: 2px solid rgb(201, 255, 119);
+    padding: 15px;
+    display: flex;
+    background-color: #9effe7;
+}
+
+
+/* borda vermelha na classe brand */
+
+.brand img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.btn {
+    padding: 2px 15px;
+    border-radius: 5px;
+    background: #9effe7;
+    box-shadow: -20px 20px 60px #86d9c4, 20px -20px 60px #b6ffff;
+}
+
+.btn a {
+    text-decoration: none;
+    font-family: 'Potta One', cursive;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.container-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.imput {
+    margin: 5px 0 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.imput:focus {
+    outline: 0;
+    border: 1px solid rgb(15, 59, 100);
+    box-shadow: 0 0 0 0.25rem rgba(135, 196, 253, 0.25);
+}
+
+.imput:last-child {
+    margin: 5px 0 0;
+}
+
+.btn-group {
+    text-align: center;
+}
+
+
+/* 
+.container {
+    border: 2px solid black;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container.img1 {
+    background-image: url('../assets/Vava.jpg');
+}
+
+.container.img2 {
+    margin-top: 400px;
+    background-image: url('../assets/logo-nutri.png');
+} */
+
+
+/* borda azul na classe nav */
+
+.nav {
+    border: 2px solid rgb(82, 82, 255);
+    margin-left: auto;
+    padding: 10px;
+}
+
+.navbar {
+    border: 2px solid green;
+}
+
+
+/* 
+mais especifico
+  inline
+  id
+  classe
+  elemento
+menos especifico
+*/
