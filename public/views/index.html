@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Nutrition App</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo" class="brand">
+            <img src="../assets/logo-nutri.png" alt="logo nutricionista">
+            <p>NutriApp</p>
+        </div>
+        <div class="toggle-btn">
+          <div class="dash"></div>
+          <div class="dash"></div>
+          <div class="dash"></div>
+        </div>
+        <div class="nav">
+          <button class="btn btn-login"><a href="./login.html">Login</a></button>
+          <nav class="navbar">
+            <a>Home</a>
+            <a>Sobre</a>
+            <a>Serviços</a>
+            <a>Contato</a>
+          </nav>
+        </div>
+    </header>
+    <main class="section-container">
+      <div>
+        <h1 class="page-title">
+          Sua vida mais saudável!
+        </h1>
+        <p class="page-subtitle">
+          Assine já um de nossos planos!
+        </p>
+        <div>
+          <button class="btn">Assinar agora mesmo!</button>
+        </div>
+      </div>
+      <div class="img-main"></div>
+    </main>
+    <section class="card-section">
+      <h2 class="section-title">Alguns Benefícios</h2>
+      <div class="card-section-container">
+        <div class="card">
+          <div class="card-img img-1"></div>
+          <div class="card-title">Emagrecer</div>
+          <div class="card-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus amet voluptas tempora, nobis eaque praesentium animi nemo voluptates quisquam quas, ad enim aperiam possimus at molestiae! Voluptates qui voluptatum impedit culpa.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img img-2"></div>
+          <div class="card-title">Diposição</div>
+          <div class="card-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus amet voluptas tempora, nobis eaque praesentium animi nemo voluptates quisquam quas, ad enim aperiam possimus at molestiae! Voluptates qui voluptatum impedit culpa.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img img-3"></div>
+          <div class="card-title">Longevidade</div>
+          <div class="card-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus amet voluptas tempora, nobis eaque praesentium animi nemo voluptates quisquam quas, ad enim aperiam possimus at molestiae! Voluptates qui voluptatum impedit culpa.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="spotlight-container">
+      <h3 class="spotlight-title">
+        Contrate já um de nossos profissionais
+      </h3>
+      <p class="spotlight-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, a.</p>
+    </section>
+    <section>
+      <h2 class="section-title">Nossos Médicos</h2>
+      <div class="card-section-container">
+        <div class="card">
+          <div class="card-img img-4"></div>
+          <div class="card-title">Dr. José Silva</div>
+          <div class="card-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus amet voluptas tempora, nobis eaque praesentium animi nemo voluptates quisquam quas, ad enim aperiam possimus at molestiae! Voluptates qui voluptatum impedit culpa.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img img-4"></div>
+          <div class="card-title">Dr. Maria Silva</div>
+          <div class="card-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus amet voluptas tempora, nobis eaque praesentium animi nemo voluptates quisquam quas, ad enim aperiam possimus at molestiae! Voluptates qui voluptatum impedit culpa.
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img img-4"></div>
+          <div class="card-title">Dr. Severino Silva</div>
+          <div class="card-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis temporibus amet voluptas tempora, nobis eaque praesentium animi nemo voluptates quisquam quas, ad enim aperiam possimus at molestiae! Voluptates qui voluptatum impedit culpa.
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h6 class="footer-title">NutriApp</h6>
+      <div class="social">
+        <div class="social-icon twitter"></div>
+        <div class="social-icon facebook"></div>
+        <div class="social-icon whatsapp"></div>
+      </div>
+      <small class="footer-text">Todos os direitos reservados &copy;</small>
+    </footer>
+
+    <script>
+      let toggle = document.querySelector('.toggle-btn')
+      let nav = document.querySelector('.nav')
+      toggle.addEventListener('click', () => {
+        nav.classList.toggle('show')
+      });
+    </script>
+</body>
+
+</html>
