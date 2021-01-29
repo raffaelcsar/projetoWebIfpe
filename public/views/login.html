@@ -10,15 +10,14 @@
 
 <body class="container-centered">
 
-    <form class="login-container" action="localhost:3000">
+    <form class="login-container" action="/login" method="POST">
         <label class="label" for="">Email</label>
-        <input class="imput" type="text">
+        <input class="imput" type="text" name="email">
         <label class="label" for="">Senha</label>
-        <input class="imput" type="password">
+        <input class="imput" type="password" name="senha">
         <div class="btn-group">
-            <button class="btn-login">Entrar</button>
+          <button class="btn-login">Entrar</button>
         </div>
-
     </form>
 
 </body>
