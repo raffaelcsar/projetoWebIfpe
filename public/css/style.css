@@ -143,9 +143,16 @@ header {
 .section-container
 {
   margin: 3rem 0;
-  height: 300px;
+  height: 500px;
   text-align: center;
   display: flex;
+  justify-content: center;
+}
+
+.section-content
+{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -166,7 +173,7 @@ header {
 .card-section
 {
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 80px;
   padding: 0 10px;
 }
 
@@ -175,19 +182,22 @@ header {
   text-align: center;
   font-size: 2rem;
   font-family: 'Concert One', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 5rem;
 }
 
 .card-section-container
 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .card
 {
+  box-sizing: border-box;
   width: 300px;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 3px 3px 5px var(--dark-yellow);
   margin-bottom: 3rem;
 }
@@ -248,7 +258,7 @@ header {
 {
   background-color: var(--red);
   padding: 1.25rem 0.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 
 .spotlight-title
@@ -267,12 +277,15 @@ header {
 
 footer
 {
-  background-color: #ef4f4f;
+  /* background-color: #ef4f4f; */
+  background-color: #75cfb8;
   padding: 2rem 1rem;
 }
 
 .footer-title
 {
+  max-width: 1000px;
+  margin: 0 auto;
   font-size: 2rem;
   font-family: 'Concert One', cursive;
   color: #e3e3e3;
@@ -328,20 +341,75 @@ footer
   text-align: center;
   color: #e3e3e3;
 }
+@media (min-width: 599px) {
+  .card-section-container{
+    justify-content: space-evenly;
+  }
+  /* .card{
+    margin-right: 2rem;
+  }
+
+  .card:last-child{
+    margin-right: 0;
+  } */
+}
+
+@media (min-width: 644px) {
+  .spotlight-container{
+    padding: 5rem 2rem;
+  }
+
+  .spotlight-title{
+    font-size: 3rem;
+  }
+}
 
 @media (min-width: 768px) {
   .section-container
   {
+    justify-content: space-evenly;
     align-items: center;
   }
 
   .img-main{
-    height: 300px;
-    width: 300px;
+    height: 30rem;
+    width: 30rem;
     background-image: url('../assets/food-2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
+  }
+
+  header
+  {
+    padding: 1rem;
+    justify-content: space-around;
+  }
+
+  .toggle-btn{
+    display: none;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 20px;
+  }
+
+  .navbar{
+    min-width: fit-content;
+    flex-direction: row;
+  }
+
+  .navbar a {
+    margin-right: 20px;
+  }
+
+  .navbar a:last-child
+  {
+    margin-right: 0;
   }
 }
 /* 
