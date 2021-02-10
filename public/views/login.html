@@ -10,16 +10,16 @@
 
 <body class="container-centered">
 
-    <form class="login-container" action="/login" method="POST">
-        <label class="label" for="">Email</label>
-        <input class="imput" type="text" name="email">
-        <label class="label" for="">Senha</label>
-        <input class="imput" type="password" name="senha">
-        <div class="btn-group">
-          <button class="btn-login">Entrar</button>
-        </div>
-    </form>
+  <form id="login" class="login-container">
+    <label class="label" for="">Email</label>
+    <input class="input" type="text" name="email">
+    <label class="label" for="">Senha</label>
+    <input class="input" type="password" name="senha">
+    <div class="btn-group">
+      <button id="btn-login" class="btn btn-login">Entrar</button>
+    </div>
+  </form>
 
+  <script src="../controller/form.js"></script>
 </body>
-
 </html>

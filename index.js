@@ -19,15 +19,19 @@ app.get('/login', (req, res) => {
 
 app.post('/login', (req, res) => {
   const body = req.body
+  console.log("usuário capturado:", body)
   fs.readFile('./data.json', (err, data) => {
     let db = JSON.parse(data)
+    console.log("DB:", db)
     let check = []
     db.forEach(user => {
       check.push(user.email)
     })
+    console.log("USERS: ", check)
+    console.log("SEARCHING USER:", body.email)
     if(check.indexOf(body.email) !== -1)
-      return res.send("Usuário fez login")
-    return res.send("Deu ruim cachoeira")
+      return res.status(200).send("Usuário fez login")
+    return res.status(422).send("Deu ruim cachoeira")
   })
 })
 
