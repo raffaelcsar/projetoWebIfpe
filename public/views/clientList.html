@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Client List</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo" class="brand">
+            <img src="../assets/logo-nutri.png" alt="logo nutricionista">
+            <p>NutriApp</p>
+        </div>
+        <div class="toggle-btn">
+            <div class="dash"></div>
+            <div class="dash"></div>
+            <div class="dash"></div>
+        </div>
+        <div class="nav">
+            <nav class="navbar">
+                <a>Home</a>
+                <a>Sobre</a>
+                <a>Serviços</a>
+                <a>Contato</a>
+            </nav>
+        </div>
+    </header>
+    <table id="clientTable">
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    email
+                </th>
+                <th>
+                    fone
+                </th>
+                <th>
+                    plano
+                </th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    Maria
+                </td>
+                <td>
+                    maria@email.com
+                </td>
+                <td>
+                    87999323232
+                </td>
+                <td>
+                    plus master
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Maria
+                </td>
+                <td>
+                    maria@email.com
+                </td>
+                <td>
+                    87999323232
+                </td>
+                <td>
+                    plus master
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Maria
+                </td>
+                <td>
+                    maria@email.com
+                </td>
+                <td>
+                    87999323232
+                </td>
+                <td>
+                    plus master
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Maria
+                </td>
+                <td>
+                    maria@email.com
+                </td>
+                <td>
+                    87999323232
+                </td>
+                <td>
+                    plus master
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+    <form id="formulario">
+        <label class="label" for="name">Nome</label>
+        <div class="input_container">
+            <input class="input" type="text" id="name" name="name">
+            <small id="errorName"></small>
+        </div>
+        <label class="label" for="email">E-mail</label>
+        <div class="input_container">
+            <input class="input" type="email" id="email" name="email">
+            <small id="errorEmail"></small>
+        </div>
+        <label class="label" for="phone">Telefone</label>
+        <div class="input_container">
+            <input class="input" type="text" id="phone" name="phone">
+            <small id="errorPhone"></small>
+        </div>
+        <label class="label" for="plano">Plano</label>
+        <div class="input_container">
+            <input class="input" type="text" id="plano" name="plano">
+            <small id="errorPlano"></small>
+        </div>
+        <button class="btn" id="botaoAdd">Novo Cliente</button>
+    </form>
+
+    <script src="../controller/client.js"></script>
+</body>
+
+</html>
