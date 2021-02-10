@@ -404,8 +404,8 @@ footer
   }
 
   .navbar{
-    min-width: fit-content;
     flex-direction: row;
+    min-width: 100px;
   }
 
   .navbar a {
