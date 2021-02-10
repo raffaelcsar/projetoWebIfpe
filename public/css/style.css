@@ -430,20 +430,23 @@ footer
     padding: 15px;
     border: 1px solid #e6b566;
     border-radius: 5px;
+    min-width: 300px;
+    max-width: 500px;
 }
 
-.imput {
+.input {
     margin: 5px 0 15px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
+    border: 1px solid #e6b566;
 }
 
-.imput:focus {
+.input:focus {
     outline: 0;
     border: 1px solid rgb(15, 59, 100);
     box-shadow: 0 0 0 0.25rem #e6b56679;
 }
 
-.imput:last-child {
+.input:last-child {
     margin: 5px 0 0;
 }
