@@ -1,6 +1,9 @@
-[
-  {
-    "email": "raphael@email.com",
-    "senha": "asdasd"
-  }
+[{
+        "email": "raphael@email.com",
+        "senha": "asdasd"
+    },
+    {
+        "email": "rafael@email.com",
+        "senha": "123456"
+    }
 ]
